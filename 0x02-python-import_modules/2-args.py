@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     """gets the number of aurguments passed and their numbers"""
 import sys
-argument = len(sys.argv)
+argument = len(sys.argv) -1
 if argument == 0:
     print("0 arguments.")
 elif argument == 1:
