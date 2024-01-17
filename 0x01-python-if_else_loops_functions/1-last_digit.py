@@ -2,6 +2,13 @@
 import random
 number = random.randint(-10000, 10000)
 if number > 0:
-    print(f"last digit of {number} is {number % 10} and is greater than 0")
-if number < 0:
-        print(f"last digit of {number} is {abs(number) % 10} and is less than 0")
+    last = number % 10
+else:
+    last = number % -10
+
+if last > 6:
+    print(f"last digit of {number:d} is {last} and is greater than 5 and not 0")
+elif last < 6 and last != 0:
+    print(f"last digit of {number:d} is {last} and is less than 6 and not 0")            
+else:
+    print(f"the last digit of {number:d} is zero")
