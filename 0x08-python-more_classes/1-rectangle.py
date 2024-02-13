@@ -1,15 +1,19 @@
 #!/usr/bin/python3
 """A class that defines a rectangle and instance attributes"""
+
+
 class Rectangle:
     """defines a rectangle"""
-    def __init__ (self,width,height):
+    def __init__(self, width, height):
         self.__width = width
         self.__height = height
+
     @property
     def width(self):
         return self.__width
+
     @width.setter
-    def width(self,value):
+    def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
