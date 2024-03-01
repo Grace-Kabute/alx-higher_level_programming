@@ -80,6 +80,8 @@ class Rectangle(Base):
             print('#' * self.__width)
         for _ in range(self.__y):
             print('#' * self.__x)
+        for _ in range(self.__x):
+            print('#' * self.__y)
 
     def __str__(self):
         """magic method"""
