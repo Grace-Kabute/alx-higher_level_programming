@@ -78,3 +78,11 @@ class Rectangle(Base):
         """prints the stdout of the rectangle"""
         for _ in range(self.__height):
             print('#' * self.__width)
+        for _ in range(self.__x):
+            print('#' * self.__y)
+
+    def __str__(self):
+        """magic method"""
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id,
+                                                self.x, self.y, self.width,
+                                                self.height)
