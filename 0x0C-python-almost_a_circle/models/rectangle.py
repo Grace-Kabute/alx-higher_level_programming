@@ -2,6 +2,7 @@
 """Rectangle"""
 from models.base import Base
 
+
 class Rectangle(Base):
     """inherite class base"""
 
@@ -24,7 +25,7 @@ class Rectangle(Base):
     @property
     def height(self):
         return self.__height
-    
+
     @height.setter
     def height(self, height):
         self.__height = height
@@ -32,7 +33,7 @@ class Rectangle(Base):
     @property
     def x(self):
         return self.__x
-    
+
     @x.setter
     def x(self, x):
         self.__x = x
