@@ -1,1 +1,17 @@
+How to use 0-add_integer.txt
 
+This module defines an integer addition function ``add_integer(a, b=98)``
+
+usage
+
+``add_integer``` returns the addition of two arguments for numbers that
+is equivalent to using "+" operand`
+::
+   >>>add_integer = __import__('0-add_integer').add_integer
+   >>>add_integer(2,3)
+   >>>5
+::
+   >>>the function also works for floating values
+   >>>add_integer(2.0, 3.0)
+   >>>5
+the floating values are cast into integers before addition is performed
